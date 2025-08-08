@@ -1,0 +1,40 @@
+/* Search bar container */
+.search-bar {
+    margin: 2rem 0;
+    text-align: center;
+    padding: 0 0.5rem;
+  }
+  
+  /* Input box styling */
+  .search-box {
+    width: 50%;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .search-box {
+      width: 100%;
+      padding: 0.5rem;
+    }
+  }
+  
+  /* Button styling */
+  .btn {
+    margin-left: 1rem;
+    padding: 1rem 2rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    background-color: #0056b3;
+  }
+  

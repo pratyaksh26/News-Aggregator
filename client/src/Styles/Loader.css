@@ -1,0 +1,31 @@
+/* Loader container styling */
+.loader-container {
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.8); /* Light overlay effect */
+    z-index: 10;
+  }
+  
+  /* Loader animation styling */
+  .loader {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    border: 10px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    border-top-color: #3498db;
+    animation: spin 1s ease infinite;
+  }
+  
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  

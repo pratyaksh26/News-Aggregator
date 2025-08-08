@@ -1,0 +1,34 @@
+{
+  "name": "newsapp",
+  "version": "1.0.0",
+  "description": "A modern news aggregation platform with social features",
+  "main": "Backend/Server.js",
+  "scripts": {
+    "start": "node Backend/Server.js",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd Backend && npm run dev",
+    "client": "cd client && npm start",
+    "build": "cd client && npm run build",
+    "install-server": "cd Backend && npm install",
+    "install-client": "cd client && npm install",
+    "install-all": "npm run install-server && npm run install-client",
+    "vercel-build": "npm run install-all && npm run build"
+  },
+  "keywords": [
+    "news",
+    "aggregator",
+    "react",
+    "nodejs",
+    "mongodb",
+    "jwt",
+    "mern"
+  ],
+  "author": "Pratyaksh Bhayre",
+  "license": "MIT",
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "devDependencies": {
+    "concurrently": "^7.6.0"
+  }
+}

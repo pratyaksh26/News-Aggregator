@@ -1,0 +1,72 @@
+/* Container for the news cards */
+
+/* .All{
+    
+    background-image: url('https://img.freepik.com/free-vector/background-wave-minimalist-modern-style_483537-5220.jpg?w=2000&t=st=1724581908~exp=1724582508~hmac=cccb4cd92fbb4220d2d1c33b828be58a6a517c01da29d7e0d29ccd641b22b8e9');
+    
+
+} */
+
+.cards {
+    
+    /* margin-top: 2.5rem; */
+    margin-top: 100px;
+    display: grid;
+    place-content: center;
+    
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+    padding: 0 1rem;
+    
+  }
+  
+  /* Pagination styling */
+  .pagination {
+    display: flex;
+    justify-content: center;
+    gap: 3.5rem;
+    margin: 2.5rem 0;
+    align-items: center;
+  }
+  
+  /* Pagination buttons */
+  .pagination-btn {
+    padding: 0.5rem 1rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .pagination-btn:disabled {
+    background-color: #f39898;
+    cursor: not-allowed;
+  }
+  
+  .pagination-btn:hover:not(:disabled) {
+    background-color: #0056b3;
+  }
+  
+  /* Page number text */
+  .pagination p {
+    font-size: 1rem;
+    font-weight: 600;
+    opacity: 0.8;
+  }
+  
+  /* Error message styling */
+  .text-red-500 {
+    color: #f56565;
+    margin-bottom: 1rem;
+  }
+  
+  /* Loader styling */
+  .loader {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+  

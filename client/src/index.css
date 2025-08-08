@@ -1,0 +1,54 @@
+/* CSS Variables for Theme */
+:root {
+  --primary-color: #46b0b5;
+  --primary-hover: #4eed70;
+  --text-color: #333;
+  --bg-color: #f4f4f4;
+  --card-bg: #ffffff;
+  --border-color: #e0e0e0;
+  --shadow: rgba(0, 0, 0, 0.1);
+  --navbar-bg: #46b0b5;
+  --navbar-text: #ffffff;
+  --dropdown-bg: #444;
+}
+
+/* Light Theme */
+body.light-theme {
+  --text-color: #333;
+  --bg-color: #f4f4f4;
+  --card-bg: #ffffff;
+  --border-color: #e0e0e0;
+  --shadow: rgba(0, 0, 0, 0.1);
+  --navbar-bg: #46b0b5;
+  --navbar-text: #ffffff;
+  --dropdown-bg: #444;
+}
+
+/* Dark Theme */
+body.dark-theme {
+  --text-color: #ffffff;
+  --bg-color: #1a1a1a;
+  --card-bg: #2d2d2d;
+  --border-color: #404040;
+  --shadow: rgba(0, 0, 0, 0.3);
+  --navbar-bg: #2d2d2d;
+  --navbar-text: #ffffff;
+  --dropdown-bg: #1a1a1a;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

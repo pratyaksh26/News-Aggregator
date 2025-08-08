@@ -1,0 +1,360 @@
+/* Card container styling */
+.everything-card {
+    background-color: var(--card-bg);
+    border-radius: 12px;
+    box-shadow: 0 6px 20px var(--shadow);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    max-width: 360px;
+    max-height: max-content;
+    margin: auto;
+    border: 1px solid var(--border-color);
+}
+
+.everything-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px var(--shadow);
+}
+
+/* Card image styling */
+.everything-card-img {
+    margin-top: 10%;
+    margin-left: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 80%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 18px;
+}
+
+/* Description styling */
+.description-text {
+    font-size: 1.1rem;
+    line-height: 1.8rem;
+    color: var(--text-color);
+    margin-top: 1rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+/* Source and author info styling */
+.source-info {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+    color: var(--text-color);
+    opacity: 0.8;
+}
+
+.origin {
+    margin-top: 0.5rem;
+    color: var(--text-color);
+    opacity: 0.8;
+    font-size: 0.9rem;
+}
+
+/* Link styling */
+.link {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.link:hover {
+    color: #2980b9;
+}
+
+/* Social Actions Styling */
+.social-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 0;
+    padding: 0.5rem 0;
+    border-top: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.social-btn {
+    background: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    cursor: pointer;
+    color: var(--text-color);
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+}
+
+.social-btn:hover {
+    background-color: var(--border-color);
+    transform: translateY(-1px);
+}
+
+.social-btn.active {
+    color: #e74c3c;
+}
+
+.like-btn.active {
+    color: #e74c3c;
+}
+
+.bookmark-btn.active {
+    color: #f39c12;
+}
+
+.share-btn:hover {
+    color: #3498db;
+}
+
+.comment-btn:hover {
+    color: #9b59b6;
+}
+
+/* Comments Section */
+.comments-section {
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: var(--bg-color);
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+}
+
+.comments-list {
+    max-height: 200px;
+    overflow-y: auto;
+    margin-bottom: 1rem;
+}
+
+.comment {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    background-color: var(--card-bg);
+    border-radius: 6px;
+    border: 1px solid var(--border-color);
+}
+
+.comment-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.comment-user {
+    font-weight: 600;
+    color: var(--text-color);
+    font-size: 0.9rem;
+}
+
+.comment-time {
+    font-size: 0.8rem;
+    color: var(--text-color);
+    opacity: 0.6;
+}
+
+.comment-text {
+    margin: 0;
+    color: var(--text-color);
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+.comment-form {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.comment-input {
+    flex: 1;
+    padding: 0.5rem;
+    border: 1px solid var(--border-color);
+    border-radius: 20px;
+    background-color: var(--card-bg);
+    color: var(--text-color);
+    outline: none;
+}
+
+.comment-input:focus {
+    border-color: var(--primary-color);
+}
+
+.comment-submit {
+    padding: 0.5rem 1rem;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+.comment-submit:hover {
+    background-color: var(--primary-hover);
+}
+
+/* Flex container for additional content */
+/* .card-flex {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+} */
+
+@media (min-width: 1024px) {
+    .card-flex {
+        flex-direction: row;
+    }
+}
+
+/* Left image in the additional content */
+.card-image {
+    width: 100%;
+    height: 12rem;
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px;
+}
+
+/* Content container in additional content */
+.card-content {
+    border: 1px solid #f1f1f1;
+    border-radius: 12px;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Text styling in additional content */
+.text-sm {
+    font-size: 0.875rem;
+}
+
+.text-gray {
+    color: #7f8c8d;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+.card-description {
+    color: #95a5a6;
+    font-size: 1rem;
+    line-height: 1.6rem;
+}
+
+/* Author image styling */
+.author-avatar {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.author-info {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.author-text {
+    margin-left: 1rem;
+}
+
+.author-name {
+    font-size: 1rem;
+    color: #2c3e50;
+    font-weight: 600;
+}
+
+.published-date {
+    font-size: 0.875rem;
+    color: #95a5a6;
+}
+
+/* Icon styling */
+.icon {
+    fill: currentColor;
+    width: 1rem;
+    height: 1rem;
+    margin-right: 0.5rem;
+}
+
+/* Hover effect for interactive elements */
+button,
+.link {
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover,
+.link:hover {
+    transform: scale(1.05);
+    color: #2980b9;
+}
+
+/* Responsive layout for smaller screens */
+@media (max-width: 768px) {
+    .everything-card {
+        padding: 1rem;
+        max-width: 100%;
+    }
+
+    .card-flex {
+        flex-direction: column;
+    }
+
+    .card-image {
+        width: 100%;
+        height: 180px;
+    }
+
+    .social-actions {
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+
+    .social-btn {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.8rem;
+    }
+
+    .comments-section {
+        padding: 0.8rem;
+    }
+
+    .comment-form {
+        flex-direction: column;
+        gap: 0.8rem;
+    }
+
+    .comment-input {
+        border-radius: 8px;
+    }
+
+    .comment-submit {
+        border-radius: 8px;
+        align-self: flex-end;
+        width: auto;
+    }
+}
